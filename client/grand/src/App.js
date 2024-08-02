@@ -7,11 +7,11 @@ import Projects from './components/Projects';
 import OrgChart from './components/OrgChart';
 import Certifications from './components/Certifications';
 import Testimonials from './components/Testimonials';
-import Perfomance from './components/Perfomance';
+import Performance from './components/Performance';
 import Newsletter from './components/Newsletter';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import axios from 'axios';
+
 import Chart from 'chart.js/auto';
 
 function App() {
