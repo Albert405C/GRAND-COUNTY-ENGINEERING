@@ -2,10 +2,10 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-    margin: 0;
-    padding: 0;
+    background-color: #ffffff;
+    color: #030303;
+    margin: 2px;
+    padding: 2px;
   }
   
   .container {
@@ -19,11 +19,11 @@ body {
   }
   
   .bg-light {
-    background-color: #f8f9fa !important;
+    background-color: #0c0c0c !important;
   }
   
   .bg-dark {
-    background-color: #343a40 !important;
+    background-color: #f3a7a7 !important;
   }
   
   .text-center {
@@ -37,44 +37,121 @@ body {
   .mb-4 {
     margin-bottom: 1.5rem;
   }
-  
-  /* Navbar Styles */
-  .navbar {
+ 
+ /* Navbar Styles */
+.navbar {
     padding: 1rem;
+    background-color: #dee9f5; /* Navbar background color */
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: border-color 0.4s ease;
+  }
+  
+  .navbar:hover {
+    border-color: #813636; /* Border color on hover */
   }
   
   .navbar-brand {
-    font-size: 1.5rem;
+    position: relative;
+    display: inline-block;
+    color: #020202;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: color 0.4s ease;
+  }
+  
+  .navbar-brand::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #813636;
+    transform: scaleX(0);
+    transition: transform 0.4s ease;
+    transform-origin: bottom right;
+  }
+  
+  .navbar-brand:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .navbar-brand:hover {
+    color: #ffffff;
   }
   
   .nav-link {
-    color: #fff !important;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
     padding: 0.5rem 1rem;
+    color: #000000;
+    transition: color 0.4s ease;
+    z-index: 1;
   }
   
-  /* Hero Section Styles */
-  #hero {
-    background: url('https://via.placeholder.com/1920x600') no-repeat center center/cover;
-    height: 100vh;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #813636;
+    transition: transform 0.4s ease;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    z-index: -1;
   }
   
-  #hero h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+  .nav-link:hover::before {
+    transform: scaleX(1);
   }
   
-  #hero p {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+  .nav-link:hover {
+    color: #f8f7f7;
   }
   
-  #hero .btn {
-    padding: 0.75rem 1.5rem;
+  .nav-link span {
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  
+  /* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.25rem;
+    }
+    
+    .nav-link {
+      font-size: 0.9rem;
+    }
+    
+    .container {
+      padding: 0 10px;
+    }
+    
+    .content-wrapper {
+      margin: 10px 0;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-brand {
+      font-size: 1rem;
+    }
+  
+    .nav-link {
+      font-size: 0.8rem;
+    }
+    
+    .content-wrapper {
+      margin: 5px 0;
+    }
   }
   
   /* About Section Styles */
