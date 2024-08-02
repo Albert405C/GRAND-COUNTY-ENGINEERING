@@ -154,23 +154,6 @@ body {
     }
   }
   
-  /* About Section Styles */
-  #about {
-    background-color: #fff;
-  }
-  
-  #about h2 {
-    font-size: 2.5rem;
-  }
-  
-  #about .lead {
-    font-size: 1.2rem;
-  }
-  
-  #about img {
-    max-width: 100%;
-    border-radius: 5px;
-  }
   
   /* Projects Section Styles */
   #projects .project-card {
