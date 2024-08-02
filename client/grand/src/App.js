@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 import OrgChart from './components/OrgChart';
 import Certifications from './components/Certifications';
 import Testimonials from './components/Testimonials';
-import Performance from './components/Performance';
+import Perfomance from './components/Perfomance';
 import Newsletter from './components/Newsletter';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
