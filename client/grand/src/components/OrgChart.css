@@ -1,0 +1,5 @@
+/* Org Chart Section Styles */
+#org-chart img {
+    max-width: 100%;
+    border-radius: 5px;
+  }

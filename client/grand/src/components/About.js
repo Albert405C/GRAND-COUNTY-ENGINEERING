@@ -35,27 +35,16 @@ function About() {
         
         {/* Additional Sections */}
         <div className="additional-sections mt-5">
-          <div className="vision">
+          <div className="vision mt-4">
             <h3>Our Vision</h3>
-            <p>To be the leading engineering firm known for innovation and excellence in every project.</p>
+            <p>Our goal is to establish Grand CountyEngineering& Contractors Ltd. as the number one engineering, procurement and construction company in East Africa – an organization with a global reach, sustained growth and a worldwide reputation for engineering excellence.</p>
           </div>
           <div className="mission mt-4">
             <h3>Our Mission</h3>
-            <p>To deliver top-quality engineering solutions that exceed our clients' expectations and contribute to sustainable development.</p>
+            <p>our mission is to be a leading force in the construction industry, specializing inRoads,Drilling and Buildings. We arecommitted to delivering high-qualityinfrastructure that not only stands the testof time but also enhances the lives of thepeople it serves.Our dedication to excellence, safety, andsustainability drives us to create enduringstructures that connect communities, fostereconomic growth, and pave the way for abrighter future. We believe in building morethan just physical structures; we are buildingthe foundations of progress, innovation, andprosperity.</p>
           </div>
-          <div className="core-values mt-4">
-            <h3>Core Values</h3>
-            <ul>
-              <li>Integrity</li>
-              <li>Innovation</li>
-              <li>Excellence</li>
-              <li>Collaboration</li>
-            </ul>
-          </div>
-          <div className="success mt-4">
-            <h3>Our Success</h3>
-            <p>Over the years, we have successfully completed numerous high-profile projects and earned recognition for our commitment to quality and innovation.</p>
-          </div>
+        
+        
         </div>
       </div>
     </section>
