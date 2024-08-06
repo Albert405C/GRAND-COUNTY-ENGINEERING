@@ -1,0 +1,254 @@
+/* General Styles */
+body{
+    
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #030303;
+    margin: 1px;
+    padding: 1px;
+  }
+  
+  .container {
+    
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+
+
+  }
+  
+  .py-5 {
+    padding: 3rem 0;
+  }
+  
+
+  
+  .bg-dark {
+    background:linear-gradient(#f06, #4a90e2)!important;
+
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-white {
+    color: #0a0a0a !important;
+
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem;
+  }
+ 
+ /* Navbar Styles */
+/* Navbar Styles */
+.navbar {
+  padding: 0.5rem 1rem; /* Reduced padding for a more compact navbar */
+  background-color: #ffffff; 
+  position: fixed; /* Ensure it stays fixed at the top */
+  top: 0; /* Align with the top of the viewport */
+  left: 0; /* Align with the left edge of the viewport */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it stays above other content */
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: border-color 0.4s ease;
+}
+
+/* Ensure there is space below the navbar */
+body {
+  padding-top: 60px; /* Adjust the value to match the height of your navbar */
+}
+
+.navbar:hover {
+  border-color: #f0eaea; /* Border color on hover */
+}
+
+.navbar-brand {
+  position: relative;
+  display: inline-block;
+  color: #020202;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 1.2rem; /* Adjusted font size for a more compact look */
+  padding: 0.5rem; /* Reduced padding for the brand */
+}
+
+.navbar-brand::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: #813636;
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+  transform-origin: bottom right;
+}
+
+.navbar-brand:hover::after {
+  transform: scaleX(1);
+}
+
+.navbar-brand:hover {
+  color: #000000;
+}
+
+.nav-link {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  color: #000000;
+  font-weight: 800;
+  transition: color 0.4s ease;
+  z-index: 1;
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #813636;
+  transition: transform 0.4s ease;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  z-index: -1;
+}
+
+.nav-link:hover::before {
+  transform: scaleX(1);
+}
+
+.nav-link:hover {
+  color: #fffefe;
+}
+
+.nav-link span {
+  position: relative;
+  z-index: 1;
+}
+
+.navbar-toggler {
+  border: none;
+  color: black;
+}
+
+  
+  /* Projects Section Styles */
+  #projects .project-card {
+    border: none;
+    transition: transform 0.3s ease;
+  }
+  
+  #projects .project-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  #projects .card-title {
+    font-size: 1.5rem;
+  }
+  
+  #projects .card-text {
+    font-size: 1rem;
+  }
+  
+  /* Vision & Mission Section Styles */
+  #vision-mission h2, #vision-mission h3 {
+    font-size: 2rem;
+  }
+  
+  #vision-mission .lead {
+    font-size: 1.2rem;
+  }
+  
+  #vision-mission ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #vision-mission ul li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Org Chart Section Styles */
+  #org-chart img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* Certifications Section Styles */
+  #certifications img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* Testimonials Section Styles */
+  #testimonials .testimonial-card {
+    border: none;
+    transition: transform 0.3s ease;
+  }
+  
+  #testimonials .testimonial-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  #testimonials .card-title {
+    font-size: 1.5rem;
+  }
+  
+  #testimonials .card-text {
+    font-size: 1rem;
+  }
+  
+  /* Performance Section Styles */
+  #performance h2 {
+    font-size: 2.5rem;
+  }
+  
+  #performance canvas {
+    max-width: 100%;
+  }
+  
+  /* Newsletter Section Styles */
+  #newsletter h2 {
+    font-size: 2.5rem;
+  }
+  
+  #newsletter .input-group {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  /* Contact Section Styles */
+  #contact h2, #contact h4 {
+    font-size: 2rem;
+  }
+  
+  #contact .form-label {
+    font-size: 1rem;
+  }
+  
+  #contact .form-control {
+    font-size: 1rem;
+    border-radius: 5px;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  

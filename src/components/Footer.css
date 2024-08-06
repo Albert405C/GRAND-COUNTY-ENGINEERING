@@ -1,0 +1,33 @@
+/* Footer.css */
+
+footer {
+    background-color: #343a40;
+  }
+  
+  footer a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-media a {
+    font-size: 1.5rem;
+  }
+  
+  .social-media a:hover {
+    color: #f06;
+  }
+  
+  .btn-light {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  .btn-light:hover {
+    background-color: #f06;
+    color: #ffffff;
+  }
+  
