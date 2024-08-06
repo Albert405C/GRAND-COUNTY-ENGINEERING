@@ -1,0 +1,52 @@
+/* Contact.css */
+
+#contact {
+    background: black;
+    padding: 60px 0;
+}
+
+.contact-info {
+    font-weight: bold;
+}
+
+.contact-info h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.contact-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.contact-icon {
+    margin-right: 8px;
+    color: #007bff;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #0056b3;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #007bff, #0056b3);
+    border: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #0056b3, #007bff);
+    color: #fff;
+}

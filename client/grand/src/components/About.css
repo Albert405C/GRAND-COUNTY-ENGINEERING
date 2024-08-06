@@ -1,153 +1,162 @@
-/* About.css */
+/* Existing styles */
 
-  /* Container for the section */
-  .container {
-    max-width: 1200px;
-    width: 100%;
-    padding: 0 20px;
-   
-  }
-  
-  /* Animation for h2 background */
-  @keyframes bgHoverAnimation {
-    0% { background-position: 0% 0%; }
-    50% { background-position: 100% 100%; }
-    100% { background-position: 0% 0%; }
-  }
-  
+/* Container for the section */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 20px;
+}
 
-    h2 {
-        position: relative;
-        display: block; /* Changed to block to center-align */
-        padding: 10px 20px;
-        font-size: 2rem;
-        background: linear-gradient(45deg, #f06, #4a90e2);
-        background-size: 200% 200%;
-        color: #000000;
-        border-radius: 30px;
-        margin: 0 auto; /* Center the element */
-      }
-   
-  
-  
- 
-  
-  /* Stats Container Styles */
-  @keyframes explode {
-    0% { transform: rotateY(0deg) scale(1); }
-    50% { transform: rotateY(360deg) scale(1.2); }
-    100% { transform: rotateY(720deg) scale(0.8); }
-  }
-  
-  .stats-container {
-    background-color: #0a0a0a; 
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(235, 200, 200, 0.2);
-    text-align: center;
-  }
-  
-  .stats-container .row {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-  
+/* Animation for h2 background */
+@keyframes bgHoverAnimation {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+h2 {
+  position: relative;
+  display: block;
+  padding: 10px 20px;
+  font-size: 2rem;
+  background: linear-gradient(45deg, #f06, #4a90e2);
+  background-size: 200% 200%;
+  color: #000000;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
+/* Stats Container Styles */
+@keyframes explode {
+  0% { transform: rotateY(0deg) scale(1); }
+  50% { transform: rotateY(360deg) scale(1.2); }
+  100% { transform: rotateY(720deg) scale(0.8); }
+}
+
+.stats-container {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(235, 200, 200, 0.2);
+  text-align: center;
+}
+
+.stats-container .row {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Ensure items wrap onto new lines */
+}
+
+.stats-container .stat-item {
+  background: linear-gradient(#f06, #4a90e2);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 100%; /* Default to full width for smaller screens */
+  max-width: 300px; /* Set max width to control size on larger screens */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.6s ease;
+  animation: explode 10s infinite;
+}
+
+.stats-container .stat-item:hover {
+  transform: rotateY(180deg);
+}
+
+.stats-container .stat-item i {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  transition: transform 10s ease;
+}
+
+.stats-container .stat-item:hover i {
+  transform: rotate(360deg);
+}
+
+.stats-container .stat-item h4 {
+  font-size: 2rem;
+  margin: 10px 0;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.stats-container .stat-item p {
+  font-size: 1.2rem;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0;
+  display: inline-block;
+}
+
+/* Additional Sections Styles */
+.additional-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  background: linear-gradient(#f06, #4a90e2);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.nav-tabs {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-tabs .nav-item {
+  margin: 0;
+}
+
+.nav-tabs .nav-link {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 10px;
+  color: #000000;
+}
+
+.nav-tabs .nav-link.active {
+  background: #fffcfc;
+  border-radius: 5px;
+  color: #070707;
+}
+
+.tab-content {
+  background: #353233;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+}
+
+.tab-content h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #000000;
+  background: #ffffffe3;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.tab-content p {
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 700;
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Responsive Styles for Stats Items */
+@media (max-width: 768px) {
   .stats-container .stat-item {
-    background: #ff2b72e8; /* Light color background for tiles */
-    border-radius: 10px;
-    padding: 20px;
-    margin: 10px;
-    width: 35%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.6s ease;
-   
-    animation: explode 10s infinite;
+    width: 100%; /* Full width on smaller screens */
+    max-width: none; /* Remove max-width restriction */
   }
-  
-  .stats-container .stat-item:hover {
-    transform: rotateY(180deg);
-  }
-  
-  .stats-container .stat-item i {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    transition: transform 10s ease;
-  }
-  
-  .stats-container .stat-item:hover i {
-    transform: rotate(360deg);
-  }
-  
-  .stats-container .stat-item h4 {
-    font-size: 2rem;
-    margin: 10px 0;
-    background: #ffffff; /* Background for header */
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .stats-container .stat-item p {
-    font-size: 1.2rem;
-    background: #ffffff; 
-    padding: 10px;
-    border-radius: 5px;
-    margin: 0;
-    display: inline-block;
-  }
-  
-  /* Additional Sections Styles */
-  .additional-sections {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    background: #030303; 
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .additional-sections > div {
-    background: #eb176fd2; 
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 40px;
-    width: 500px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-    display: block;
-  }
-  
-  .additional-sections > div:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  }
-  
-  .additional-sections h3 {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-    color: #333;
-    background: #ffffffe3; 
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .additional-sections p {
-    font-size: 1rem;
-    color: #ffffff;
-    background: #070707; 
-    padding: 10px;
-    border-radius: 5px;
-    animation: paragraphAnimation 5s ease infinite; 
-  }
-  
- 
-  
-  
-  /* Animation for dynamic paragraphs */
-  @keyframes paragraphAnimation {
-    0% { opacity: 0; transform: translateY(-10px); }
-    50% { opacity: 1; transform: translateY(0); }
-    100% { opacity: 0; transform: translateY(10px); }
-  }
-  
+}

@@ -1,17 +1,78 @@
-/* Projects Section Styles */
-#projects .project-card {
-    border: none;
-    transition: transform 0.3s ease;
+/* Projects.css */
+
+#projects {
+  background: rgb(255, 250, 250);
+  padding: 2rem 0;
+}
+
+.project-card {
+  background: linear-gradient( #f06, #4a90e2);
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 1.5rem;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project-card .card-body {
+  padding: 1.5rem;
+}
+
+.project-card .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-card .card-text {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn-outline-primary {
+  margin: 0.5rem;
+}
+
+.btn-outline-primary.active {
+  background-color: #007bff;
+  color: linear;
+}
+
+.btn-outline-primary.active:hover {
+  background-color: #d62c48;
+  color: #fff;
+}
+
+/* Ensure buttons are responsive */
+@media (max-width: 768px) {
+  .btn-outline-primary {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
   }
-  
-  #projects .project-card:hover {
-    transform: translateY(-10px);
-  }
-  
-  #projects .card-title {
-    font-size: 1.5rem;
-  }
-  
-  #projects .card-text {
-    font-size: 1rem;
-  }
+}
+
+/* Background for the Works Done section */
+.works-done {
+  background: #e9ecef;
+  padding: 2rem;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+.works-done h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.works-done ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.works-done li {
+  margin-bottom: 1rem;
+}

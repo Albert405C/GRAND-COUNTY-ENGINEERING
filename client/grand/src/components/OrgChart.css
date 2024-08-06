@@ -1,5 +1,82 @@
-/* Org Chart Section Styles */
-#org-chart img {
-    max-width: 100%;
-    border-radius: 5px;
+/* OrgChart.css */
+
+#org-chart {
+  background: white;
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.org-chart {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.org-chart-item {
+  background:linear-gradient( #f06, #4a90e2);
+  border-radius: 12px;
+  text-align: center;
+  padding: 2rem;
+  width: 250px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.org-chart-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.org-chart-item:hover::before {
+  opacity: 1;
+}
+
+.org-chart-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.org-chart-image {
+  margin-bottom: 1rem;
+}
+
+.org-chart-image img {
+  border: 4px solid #0a0a0a;
+  border-radius: 50%;
+}
+
+.org-chart-info h3 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #000000;
+  font-weight: 500;
+}
+
+.org-chart-info p {
+  font-size: 1rem;
+  margin: 0.25rem 0;
+  color: #000000;
+  font-weight: 700;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .org-chart-item {
+    width: 100%;
+    max-width: 300px;
   }
+}
