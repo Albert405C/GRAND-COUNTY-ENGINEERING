@@ -28,9 +28,8 @@ h2 {
 
 /* Stats Container Styles */
 @keyframes explode {
-  0% { transform: rotateY(0deg) scale(1); }
+  0%, 100% { transform: rotateY(0deg) scale(1); }
   50% { transform: rotateY(360deg) scale(1.2); }
-  100% { transform: rotateY(720deg) scale(0.8); }
 }
 
 .stats-container {
@@ -50,31 +49,31 @@ h2 {
 .stats-container .stat-item {
   background: linear-gradient(#f06, #4a90e2);
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
   margin: 10px;
-  width: 100%; /* Default to full width for smaller screens */
-  max-width: 300px; /* Set max width to control size on larger screens */
+  width: 70%; /* Default to full width for smaller screens */
+  max-width: 200px; /* Set max width to control size on larger screens */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.6s ease;
-  animation: explode 10s infinite;
+  transition: transform 8s ease;
+  animation: explode 20s infinite;
 }
 
 .stats-container .stat-item:hover {
-  transform: rotateY(180deg);
+  transform: rotateY(90deg);
 }
 
 .stats-container .stat-item i {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 10px;
-  transition: transform 10s ease;
+  transition: transform 5s ease;
 }
 
 .stats-container .stat-item:hover i {
-  transform: rotate(360deg);
+  transform: rotate(90deg);
 }
 
 .stats-container .stat-item h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 10px 0;
   background: #ffffff;
   padding: 10px;
@@ -82,7 +81,7 @@ h2 {
 }
 
 .stats-container .stat-item p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   background: #ffffff;
   padding: 10px;
   border-radius: 5px;
@@ -151,12 +150,46 @@ h2 {
   background: #ffffff;
   padding: 10px;
   border-radius: 5px;
+  text-align: left;
+  line-height: 1.5;
 }
 
-/* Responsive Styles for Stats Items */
+
 @media (max-width: 768px) {
   .stats-container .stat-item {
     width: 100%; /* Full width on smaller screens */
     max-width: none; /* Remove max-width restriction */
+    padding: 10px; /* Reduce padding */
+    margin: 5px; /* Reduce margin */
+  }
+
+  .stats-container .stat-item h4 {
+    font-size: 1.2rem; /* Reduce font size */
+  }
+
+  .stats-container .stat-item p {
+    font-size: 0.9rem; /* Reduce font size */
+  }
+
+  .stats-container .stat-item i {
+    font-size: 1.5rem; /* Reduce icon size */
+  }
+
+  
+  .additional-sections {
+    padding: 10px; /* Reduce padding */
+  }
+
+  .nav-tabs .nav-link {
+    font-size: 1rem; /* Reduce font size */
+  }
+
+  .tab-content h3 {
+    font-size: 1.2rem; /* Reduce font size */
+  }
+
+  .tab-content p {
+    font-size: 0.9rem; /* Reduce font size */
+    line-height: 1.4; /* Reduce line height */
   }
 }
