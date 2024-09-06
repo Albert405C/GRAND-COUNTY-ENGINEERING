@@ -8,7 +8,6 @@ import About from './components/About';
 import Services from './components/Services';
 import Projects from './components/Projects';
 import OrgChart from './components/OrgChart';
-import Certification from './components/Certification';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
@@ -24,7 +23,7 @@ function App() {
         <Services />
         <Projects />
         <OrgChart />
-        <Certification />
+   
         <Contact />
         <Footer />
   
