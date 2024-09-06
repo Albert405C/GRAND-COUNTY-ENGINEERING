@@ -7,7 +7,7 @@ function Hero() {
     return (
         <section id="home" className="hero text-center">
             <video autoPlay loop muted className="background-video">
-                <source src={`${process.env.PUBLIC_URL}/Videos/Construction Commercial Cinematic Video - Trim - Trim.mp4`} type="video/mp4" />
+                <source src={`${process.env.PUBLIC_URL}/Videos/Construction%20Commercial%20Cinematic%20Video%20-%20Trim%20-%20Trim.mp4`} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className="container">

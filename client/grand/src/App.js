@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
-
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -12,10 +11,6 @@ import OrgChart from './components/OrgChart';
 import Certification from './components/Certification';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-
-
-
-
 
 import './App.css';
 
