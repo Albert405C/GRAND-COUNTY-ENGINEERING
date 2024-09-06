@@ -23,7 +23,6 @@ function App() {
         <Services />
         <Projects />
         <OrgChart />
-   
         <Contact />
         <Footer />
   
